@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method of DOM part-3</title>
+</head>
+
+<body>
+    <!-- Normal HTML -->
+    <h1>Hello baccho - PW SKILLS</h1>
+    <p id="js"></p>
+
+    <button onclick="hey()" id="jss" type="submit">LOGIN</button>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- Javascript -->
+    <script>
+        document.addEventListener("click", hello)
+        function hello() {
+            document.getElementById("js").innerText = "Namestey baccho"
+        }
+
+
+        //lets play with button
+        function hey() {
+            document.getElementById("jss").innerText = "LOG-OUT";
+            document.getElementById("jss").style.color = "orange";
+            document.getElementById("jss").style.backgroundColor = "black"
+            document.getElementById("jss").style.padding = "8px"
+            document.getElementById("jss").style.border = "2px solid white"
+            document.getElementById("jss").style.borderRadius = "8px"
+            document.getElementById("jss").style.fontWeight = "bold"
+        }
+    </script>
+</body>
+
+</html>
